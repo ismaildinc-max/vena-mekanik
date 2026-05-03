@@ -1,26 +1,310 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --vm-navy: #001741;
+  --vm-red: #ff1717;
+  --vm-cream: #fffdf1;
+  --vm-cream-soft: #f4f0e4;
+  --vm-gray: #d9d9d9;
+  --vm-text: #071b44;
+  --vm-muted: #737985;
+  --vm-border: rgba(0, 23, 65, 0.12);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: var(--vm-cream);
+  color: var(--vm-text);
+  font-family: "Nexa", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: var(--vm-red);
+  color: #ffffff;
+}
+
+/* Scrollbar gizleme */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Referans logo marquee */
+@keyframes vm-logo-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.vm-logo-marquee {
+  animation: vm-logo-marquee 22s linear infinite;
+}
+
+.vm-logo-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Lacivert kalite alanı marquee */
+@keyframes vm-quality-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.vm-quality-marquee {
+  animation: vm-quality-marquee 24s linear infinite;
+}
+
+/* Hero genel ölçü sistemi */
+.vm-hero-section {
+  padding: 28px 16px;
+}
+
+.vm-hero-video-wrap {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .vm-hero-section {
+    padding: 34px 32px;
+  }
+
+  .vm-hero-video-wrap {
+    max-width: 920px;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+  .vm-hero-section {
+    padding: 38px 32px 46px;
+  }
+
+  .vm-hero-video-wrap {
+    max-width: min(1080px, calc((100svh - 170px) * 16 / 9));
+  }
+}
+
+/* 13-14 inç laptop ve orta masaüstü */
+@media (min-width: 1280px) {
+  .vm-hero-video-wrap {
+    max-width: min(1160px, calc((100svh - 170px) * 16 / 9));
+  }
+}
+
+/* Büyük ekran */
+@media (min-width: 1536px) {
+  .vm-hero-section {
+    padding: 48px 40px 58px;
+  }
+
+  .vm-hero-video-wrap {
+    max-width: 1280px;
+  }
+}
+
+/* Çok geniş ekran */
+@media (min-width: 1800px) {
+  .vm-hero-video-wrap {
+    max-width: 1360px;
+  }
+}
+
+/* Hero AutoCAD / mimari çizgi arka planı */
+.vm-hero-cad-layer {
+  background-image:
+    linear-gradient(to right, rgba(0, 23, 65, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 23, 65, 0.045) 1px, transparent 1px);
+  background-size: 180px 180px;
+  animation: vm-cad-grid-soft-move 28s linear infinite;
+  opacity: 0.45;
+  will-change: background-position;
+}
+
+.vm-video-shell::before {
+  content: "";
+  position: absolute;
+  inset: -14px;
+  z-index: -1;
+  border: 1px solid rgba(0, 23, 65, 0.14);
+  border-radius: inherit;
+}
+
+.vm-video-shell::after {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 26px;
+}
+
+.vm-cad-soft-line,
+.vm-cad-soft-line-reverse {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 23, 65, 0.2),
+    transparent
+  );
+}
+
+.vm-cad-soft-line {
+  animation: vm-cad-soft-x 12s ease-in-out infinite alternate;
+}
+
+.vm-cad-soft-line-reverse {
+  animation: vm-cad-soft-x-reverse 14s ease-in-out infinite alternate;
+}
+
+.vm-cad-vertical,
+.vm-cad-vertical-reverse {
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(0, 23, 65, 0.18),
+    transparent
+  );
+}
+
+.vm-cad-vertical {
+  animation: vm-cad-soft-y 13s ease-in-out infinite alternate;
+}
+
+.vm-cad-vertical-reverse {
+  animation: vm-cad-soft-y-reverse 15s ease-in-out infinite alternate;
+}
+
+@keyframes vm-cad-grid-soft-move {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 180px 180px;
+  }
+}
+
+@keyframes vm-cad-soft-x {
+  from {
+    transform: translateX(-18px);
+    opacity: 0.35;
+  }
+
+  to {
+    transform: translateX(18px);
+    opacity: 0.75;
+  }
+}
+
+@keyframes vm-cad-soft-x-reverse {
+  from {
+    transform: translateX(18px);
+    opacity: 0.35;
+  }
+
+  to {
+    transform: translateX(-18px);
+    opacity: 0.75;
+  }
+}
+
+@keyframes vm-cad-soft-y {
+  from {
+    transform: translateY(-14px);
+    opacity: 0.35;
+  }
+
+  to {
+    transform: translateY(14px);
+    opacity: 0.7;
+  }
+}
+
+@keyframes vm-cad-soft-y-reverse {
+  from {
+    transform: translateY(14px);
+    opacity: 0.35;
+  }
+
+  to {
+    transform: translateY(-14px);
+    opacity: 0.7;
+  }
+}
+
+/* İş Fikir Reklam Ajansı gümüş parlama */
+.silver-shine {
+  background: linear-gradient(
+    110deg,
+    #8f8f8f 0%,
+    #d8d8d8 20%,
+    #ffffff 40%,
+    #b7b7b7 60%,
+    #f1f1f1 80%,
+    #8f8f8f 100%
+  );
+  background-size: 220% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: silver-shine 3.8s linear infinite;
+  transition: opacity 0.3s ease;
+}
+
+.silver-shine:hover {
+  opacity: 0.82;
+}
+
+@keyframes silver-shine {
+  0% {
+    background-position: 220% center;
+  }
+
+  100% {
+    background-position: -220% center;
+  }
 }
