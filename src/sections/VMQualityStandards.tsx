@@ -71,13 +71,13 @@ export default function VMQualityStandards() {
           </div>
 
           <div className="lg:pt-2">
-            <p className="max-w-[620px] text-[15px] font-light leading-8 text-white/68">
-              Vena Mekanik olarak, yapıların kalıcı değerini artıran mekanik
-              sistemleri; uzmanlık, mühendislik disiplini ve yüksek uygulama
-              standartlarıyla hayata geçiriyoruz. Modern teknolojilerle
-              desteklenen süreçlerimiz, projelerin her aşamasında güven,
-              verimlilik ve sürdürülebilir kalite sağlar.
-            </p>
+            <p className="max-w-[660px] text-[15px] font-light leading-8 text-white/72">
+  Vena Mekanik olarak, yapıların kalıcı değerini artıran mekanik
+  sistemleri; güçlü mühendislik altyapımız, uzman kadromuz ve üst
+  düzey uygulama standartlarımızla hayata geçiriyoruz. Modern
+  teknolojilerle entegre süreçlerimizle, projelerin her aşamasında
+  güven, verimlilik ve sürdürülebilir kaliteyi garanti altına alıyoruz.
+</p>
 
             <div className="mt-10 grid max-w-[420px] grid-cols-2 gap-10">
               <div>

@@ -11,8 +11,8 @@ export default function HakkimizdaPage() {
   ];
 
   return (
-    <main className="bg-[var(--vm-cream)]">
-      <section className="px-6 py-16 md:py-24 lg:py-28">
+    <main className="bg-white">
+      <section className="bg-white px-6 py-16 md:py-24 lg:py-28">
         <div className="mx-auto grid max-w-[1180px] items-center gap-12 lg:grid-cols-[1.08fr_0.92fr] lg:gap-20">
           <div className="relative overflow-hidden bg-[#d9d9d9]">
             <img
@@ -23,15 +23,15 @@ export default function HakkimizdaPage() {
           </div>
 
           <div>
-            <p className="mb-8 text-[11px] font-bold uppercase tracking-[0.36em] text-[var(--vm-red)]">
-              Hakkımızda
-            </p>
+            <p className="mb-6 text-[13px] font-bold uppercase tracking-[0.26em] text-[var(--vm-red)]">
+  Hakkımızda
+</p>
 
-            <h1 className="max-w-[560px] text-[38px] font-bold leading-[1.12] tracking-[-0.04em] text-[var(--vm-navy)] md:text-[56px] lg:text-[62px]">
-              Mekanik Tesisatta Sürdürülebilir Kalite ve Uzmanlık
-            </h1>
+<h1 className="max-w-[620px] text-[34px] font-bold leading-[1.12] tracking-[-0.035em] text-[var(--vm-navy)] md:text-[44px] lg:text-[48px]">
+  Mekanik Tesisatta Sürdürülebilir Kalite ve Uzmanlık
+</h1>
 
-            <p className="mt-9 max-w-[560px] text-[18px] font-light leading-9 text-[var(--vm-text)]/78">
+<p className="mt-8 max-w-[620px] text-[18px] font-light leading-9 text-[var(--vm-text)]/82">
               Vena Mekanik, mekanik tesisat ve mühendislik alanında; güvenilir,
               sürdürülebilir ve yüksek verimli çözümler sunmak amacıyla
               kurulmuştur. Projelendirmeden uygulamaya kadar tüm süreçlerde
@@ -44,7 +44,7 @@ export default function HakkimizdaPage() {
 
       <section
         id="hakkimizda-iletisim"
-        className="bg-[var(--vm-cream)] px-6 py-16 md:py-24"
+        className="bg-white px-6 py-16 md:py-24"
       >
         <div className="mx-auto grid max-w-[980px] gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:gap-20">
           <div>
@@ -108,7 +108,7 @@ export default function HakkimizdaPage() {
                 <input
                   type="text"
                   placeholder="Ad Soyad"
-                  className="h-14 w-full border border-transparent bg-[#e9e6df] px-5 text-[15px] text-[var(--vm-navy)] outline-none transition placeholder:text-[var(--vm-muted)] focus:border-[var(--vm-red)]"
+                  className="h-14 w-full border border-[#eef1f6] bg-[#f8fafc] px-5 text-[15px] text-[var(--vm-navy)] outline-none transition placeholder:text-[var(--vm-muted)] focus:border-[var(--vm-red)]"
                 />
               </label>
 
@@ -119,7 +119,7 @@ export default function HakkimizdaPage() {
                 <input
                   type="tel"
                   placeholder="05*********"
-                  className="h-14 w-full border border-transparent bg-[#e9e6df] px-5 text-[15px] text-[var(--vm-navy)] outline-none transition placeholder:text-[var(--vm-muted)] focus:border-[var(--vm-red)]"
+                  className="h-14 w-full border border-[#eef1f6] bg-[#f8fafc] px-5 text-[15px] text-[var(--vm-navy)] outline-none transition placeholder:text-[var(--vm-muted)] focus:border-[var(--vm-red)]"
                 />
               </label>
             </div>
@@ -131,7 +131,7 @@ export default function HakkimizdaPage() {
               <input
                 type="text"
                 placeholder="Şirket İsmini Giriniz"
-                className="h-14 w-full border border-transparent bg-[#e9e6df] px-5 text-[15px] text-[var(--vm-navy)] outline-none transition placeholder:text-[var(--vm-muted)] focus:border-[var(--vm-red)]"
+                className="h-14 w-full border border-[#eef1f6] bg-[#f8fafc] px-5 text-[15px] text-[var(--vm-navy)] outline-none transition placeholder:text-[var(--vm-muted)] focus:border-[var(--vm-red)]"
               />
             </label>
 
@@ -142,11 +142,11 @@ export default function HakkimizdaPage() {
               <textarea
                 rows={7}
                 placeholder="Mesajınızı buraya yazınız..."
-                className="w-full resize-none border border-transparent bg-[#e9e6df] px-5 py-5 text-[15px] text-[var(--vm-navy)] outline-none transition placeholder:text-[var(--vm-muted)] focus:border-[var(--vm-red)]"
+                className="w-full resize-none border border-[#eef1f6] bg-[#f8fafc] px-5 py-5 text-[15px] text-[var(--vm-navy)] outline-none transition placeholder:text-[var(--vm-muted)] focus:border-[var(--vm-red)]"
               />
             </label>
 
-            <label className="flex items-center gap-3 text-[10px] font-medium text-[var(--vm-muted)]">
+            <label className="flex items-center gap-3 text-[12px] font-medium text-[var(--vm-muted)]">
               <input
                 type="checkbox"
                 className="h-4 w-4 accent-[var(--vm-red)]"

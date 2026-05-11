@@ -17,9 +17,11 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <body>
-        <VMHeader />
-        {children}
-        <VMFooter />
+        <div className="vm-site-scroll">
+          <VMHeader />
+          {children}
+          <VMFooter />
+        </div>
       </body>
     </html>
   );

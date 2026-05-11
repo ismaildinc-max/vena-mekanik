@@ -4,6 +4,11 @@ import { useState } from "react";
 
 const services = [
   {
+    title: "Sıhhi Tesisat ve Altyapı Sistemleri",
+    image: "/images/services/sihhi-tesisat.jpg",
+    alt: "Vena Mekanik sıhhi tesisat ve altyapı sistemleri",
+  },
+  {
     title: "Isıtma Sistemleri",
     image: "/images/services/isitma-sistemleri.jpg",
     alt: "Vena Mekanik ısıtma sistemleri uygulamaları",
@@ -19,24 +24,19 @@ const services = [
     alt: "Vena Mekanik havalandırma sistemleri uygulamaları",
   },
   {
-    title: "Sıhhi Tesisat ve Altyapı Sistemleri",
-    image: "/images/services/sihhi-tesisat.jpg",
-    alt: "Vena Mekanik sıhhi tesisat ve altyapı sistemleri",
-  },
-  {
     title: "Yangın Koruma ve Söndürme Çözümleri",
     image: "/images/services/yangin-koruma.jpg",
     alt: "Vena Mekanik yangın koruma ve söndürme sistemleri",
   },
   {
-    title: "Mekanik Projelendirme ve Danışmanlık",
-    image: "/images/services/mekanik-projelendirme.jpg",
-    alt: "Vena Mekanik mekanik projelendirme ve danışmanlık hizmetleri",
-  },
-  {
     title: "Bina Otomasyonu ve Kontrol Sistemleri",
     image: "/images/services/bina-otomasyonu.jpg",
     alt: "Vena Mekanik bina otomasyonu ve kontrol sistemleri",
+  },
+  {
+    title: "Mekanik Projelendirme ve Danışmanlık",
+    image: "/images/services/mekanik-projelendirme.jpg",
+    alt: "Vena Mekanik mekanik projelendirme ve danışmanlık hizmetleri",
   },
 ];
 
@@ -48,15 +48,15 @@ export default function VMIntroServices() {
   return (
     <section
       id="hizmetlerimiz"
-      className="bg-[var(--vm-cream)] px-6 pb-20 pt-8 md:py-28"
+       className="bg-white px-6 pb-20 pt-14 md:py-28"
     >
       <div className="mx-auto max-w-[1180px]">
-        <h1 className="w-full text-[32px] font-bold leading-[1.08] tracking-[-0.03em] text-[var(--vm-navy)] md:text-[48px] lg:text-[54px]">
-          Endüstriyel ve ticari projelerde{" "}
+        <h1 className="w-full max-w-[1120px] text-[28px] font-bold leading-[1.08] tracking-[-0.035em] text-[var(--vm-navy)] md:text-[40px] lg:text-[44px] xl:text-[46px]">
+          Projelerinizi yüksek{" "}
           <span className="text-[var(--vm-red)]">
-            mühendislik standartlarını yükselten
+            mühendislik standartlarıyla
           </span>{" "}
-          anahtar teslim mekanik taahhüt hizmetleri.
+          buluşturarak, anahtar teslim mekanik taahhüt hizmetleri sağlamaktayız.
         </h1>
 
         {/* Mobil düzen: başlık / görsel / butonlar */}
@@ -82,7 +82,7 @@ export default function VMIntroServices() {
                   className={`flex min-h-12 w-full items-center justify-between border px-4 py-3 text-left text-[13px] font-semibold leading-snug transition ${
                     isActive
                       ? "border-[var(--vm-red)] bg-[var(--vm-red)] text-white"
-                      : "border-[var(--vm-border)] bg-gray text-[var(--vm-navy)]"
+                      : "border-[var(--vm-border)] bg-white text-[var(--vm-navy)]"
                   }`}
                 >
                   <span>{service.title}</span>

@@ -12,7 +12,7 @@ const projects = [
     area: "12.500 m2",
     status: "Tamamlandı",
     category: "Mekanik Tesisat",
-    eyebrow: "Referans Proje",
+    eyebrow: "Proje Detayı",
     detailTitle: "Dikilitaş Cami Projesi mekanik tesisat uygulamaları",
     intro:
       "Dikilitaş Cami Projesi kapsamında yapının teknik ihtiyaçlarına uygun, güvenilir ve uzun ömürlü mekanik tesisat çözümleri uygulanmıştır.",
@@ -45,7 +45,7 @@ const projects = [
     area: "12.500 m2",
     status: "Tamamlandı",
     category: "Yangın Tesisatı",
-    eyebrow: "Referans Proje",
+    eyebrow: "Proje Detayı",
     detailTitle: "Test alanı sprinkler değişimi ve sistem revizyonu",
     intro:
       "Test Alanı Sprinkler Değişimi projesinde mevcut yangın tesisatı altyapısı yenilenerek daha güvenli ve sürdürülebilir bir sistem yapısı oluşturulmuştur.",
@@ -78,7 +78,7 @@ const projects = [
     area: "12.500 m2",
     status: "Tamamlandı",
     category: "AVM Mekanik Revizyon",
-    eyebrow: "Referans Proje",
+    eyebrow: "Proje Detayı",
     detailTitle: "Torium ortak alan mekanik sistem revizyonları",
     intro:
       "Torium Ortak Alan Revizyonları kapsamında yoğun kullanıma sahip alanlarda mekanik altyapının performansı ve işletme verimliliği artırılmıştır.",
@@ -111,7 +111,7 @@ const projects = [
   area: "3.200 m2",
   status: "Tamamlandı",
   category: "Villa Projesi",
-  eyebrow: "Referans Proje",
+  eyebrow: "Proje Detayı",
   detailTitle: "Villa yaşam alanları için konfor odaklı mekanik çözümler",
   intro:
     "Referans Villa Proje kapsamında yaşam konforunu artıran ısıtma, soğutma ve havalandırma sistemleri uygulanmıştır.",
@@ -144,7 +144,7 @@ const projects = [
   area: "8.750 m2",
   status: "Tamamlandı",
   category: "Otel Projesi",
-  eyebrow: "Referans Proje",
+  eyebrow: "Proje Detayı",
   detailTitle: "Otel yapıları için yüksek konforlu mekanik sistemler",
   intro:
     "Referans Otel Proje kapsamında misafir konforunu ve işletme sürekliliğini destekleyen mekanik tesisat çözümleri uygulanmıştır.",
@@ -177,7 +177,7 @@ const projects = [
   area: "10.400 m2",
   status: "Tamamlandı",
   category: "Residence Projesi",
-  eyebrow: "Referans Proje",
+  eyebrow: "Proje Detayı",
   detailTitle: "Residence projeleri için verimli iklimlendirme çözümleri",
   intro:
     "Referans Residance Proje kapsamında konut kullanıcılarına yönelik konforlu ve enerji verimli iklimlendirme çözümleri geliştirilmiştir.",
@@ -210,7 +210,7 @@ const projects = [
   area: "15.600 m2",
   status: "Tamamlandı",
   category: "Sağlık Yapısı",
-  eyebrow: "Referans Proje",
+  eyebrow: "Proje Detayı",
   detailTitle: "Sağlık yapıları için güvenli mekanik tesisat uygulamaları",
   intro:
     "Referans Hastane Proje kapsamında hijyen, güvenlik ve sistem sürekliliği gerektiren mekanik tesisat çalışmaları gerçekleştirilmiştir.",
@@ -243,7 +243,7 @@ const projects = [
   area: "2.150 m2",
   status: "Tamamlandı",
   category: "Ticari Alan",
-  eyebrow: "Referans Proje",
+  eyebrow: "Proje Detayı",
   detailTitle: "Mağaza alanları için kompakt ve verimli mekanik çözümler",
   intro:
     "Referans Mağaza Proje kapsamında ticari kullanım ihtiyaçlarına uygun klima, havalandırma ve mekanik tesisat çözümleri uygulanmıştır.",
@@ -276,7 +276,7 @@ const projects = [
   area: "4.850 m2",
   status: "Tamamlandı",
   category: "Ofis Projesi",
-  eyebrow: "Referans Proje",
+  eyebrow: "Proje Detayı",
   detailTitle: "Ofis yapıları için konforlu çalışma alanı çözümleri",
   intro:
     "Referans Ofis Proje kapsamında çalışma alanlarında konforu artıran VRF, havalandırma ve mekanik tesisat sistemleri uygulanmıştır.",
@@ -313,7 +313,7 @@ export default async function ReferansDetayPage({
 
  if (!project) {
   return (
-    <main className="min-h-screen bg-[#f7f0df] px-8 py-40 text-[#061f49]">
+    <main className="min-h-screen bg-white px-8 py-40 text-[#061f49]">
       <h1 className="text-4xl font-bold">Slug eşleşmedi</h1>
 
       <p className="mt-6 text-xl">
@@ -343,7 +343,7 @@ const moreProjects = [
 ].slice(0, 3);
 
   return (
-    <main className="bg-[#f7f0df] text-[#061f49]">
+    <main className="bg-white text-[#061f49]">
       <section className="px-5 pb-20 pt-24 md:px-8 md:pb-24 md:pt-32">
         <div className="mx-auto max-w-[1180px] 2xl:max-w-[1400px]">
           <div className="grid items-start gap-12 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16">
@@ -372,11 +372,7 @@ const moreProjects = [
   {project.intro}
 </p>
 
-              <p className="mt-6 max-w-[620px] text-[16px] leading-8 text-[#6a7280] md:text-[17px]">
-                {project.intro}
-              </p>
-
-              <div className="my-8 h-px w-full bg-[#d8d0bf]" />
+              <div className="my-8 h-px w-full bg-[#eef1f6]" />
 
               <h2 className="text-[24px] font-semibold tracking-[-0.4px] text-[#061f49]">
                 Proje Kapsamı
@@ -387,15 +383,15 @@ const moreProjects = [
 </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <span className="rounded-full border border-[#d8d0bf] px-4 py-2 text-[13px] font-semibold uppercase tracking-[1px] text-[#061f49]">
+                <span className="rounded-full border border-[#eef1f6] px-4 py-2 text-[13px] font-semibold uppercase tracking-[1px] text-[#061f49]">
                   {project.service}
                 </span>
 
-                <span className="rounded-full border border-[#d8d0bf] px-4 py-2 text-[13px] font-semibold uppercase tracking-[1px] text-[#061f49]">
+                <span className="rounded-full border border-[#eef1f6] px-4 py-2 text-[13px] font-semibold uppercase tracking-[1px] text-[#061f49]">
                   {project.area}
                 </span>
 
-                <span className="rounded-full border border-[#d8d0bf] px-4 py-2 text-[13px] font-semibold uppercase tracking-[1px] text-[#061f49]">
+                <span className="rounded-full border border-[#eef1f6] px-4 py-2 text-[13px] font-semibold uppercase tracking-[1px] text-[#061f49]">
                   {project.status}
                 </span>
               </div>
@@ -404,7 +400,7 @@ const moreProjects = [
                 href="/referanslarimiz"
                 className="mt-8 inline-flex items-center gap-3 text-[15px] font-semibold uppercase tracking-[0.8px] text-[#061f49] transition duration-300 hover:text-[#ef1d18]"
               >
-                Tüm referanslara dön
+                Tüm projelere dön
                 <span className="text-[22px] leading-none">→</span>
               </Link>
             </div>
@@ -437,7 +433,7 @@ const moreProjects = [
               </p>
 
               <h2 className="mt-3 text-[34px] font-bold uppercase leading-tight tracking-[-0.8px] text-white md:text-[42px]">
-                Diğer Referanslar
+                Diğer Projeler
               </h2>
             </div>
 
@@ -445,7 +441,7 @@ const moreProjects = [
               href="/referanslarimiz"
               className="inline-flex w-fit border-b-2 border-[#ef1d18] pb-2 text-[15px] font-semibold uppercase tracking-[0.6px] text-white transition duration-300 hover:text-[#ef1d18]"
             >
-              Tüm Referansları Gör
+              Tüm Projeleri Gör
             </Link>
           </div>
 

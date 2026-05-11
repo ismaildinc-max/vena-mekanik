@@ -40,10 +40,10 @@ export default function VMFooter() {
 
             <div className="space-y-4 text-[13px] leading-6 text-white/62">
               <a
-                href="tel:+905062007401"
+                href="tel:+905532017491"
                 className="block transition hover:text-white"
               >
-                +90 506 200 74 01
+                +90 553 201 74 91
               </a>
 
               <a

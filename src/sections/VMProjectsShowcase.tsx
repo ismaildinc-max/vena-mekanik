@@ -7,6 +7,7 @@ const projects = [
     title: "Dikilitaş Cami Projesi",
     location: "Beşiktaş / İstanbul",
     image: "/images/projects/dikiltas-cami-1.jpg",
+    href: "/referanslarimiz/dikilitas-cami-projesi",
     details: [
       {
         label: "Hizmet Kapsamı",
@@ -26,6 +27,7 @@ const projects = [
     title: "Test Alanı Sprinkler Değişimi",
     location: "Beşiktaş / İstanbul",
     image: "/images/projects/efectis-era.jpeg",
+    href: "/referanslarimiz/test-alani-sprinkler-degisimi",
     details: [
       {
         label: "Hizmet Kapsamı",
@@ -45,6 +47,7 @@ const projects = [
     title: "Torium Ortak Alan Revizyonları",
     location: "Beşiktaş / İstanbul",
     image: "/images/projects/torium_avm.jpeg",
+    href: "/referanslarimiz/torium-ortak-alan-revizyonlari",
     details: [
       {
         label: "Hizmet Kapsamı",
@@ -64,7 +67,10 @@ const projects = [
 
 function ProjectCard({ project }: { project: (typeof projects)[number] }) {
   return (
-    <article className="group bg-white transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(0,23,65,0.10)]">
+    <a
+      href={project.href}
+      className="group block bg-white transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(0,23,65,0.10)]"
+    >
       <div className="aspect-[1.28/1] overflow-hidden bg-[#d9d9d9]">
         <img
           src={project.image}
@@ -99,7 +105,7 @@ function ProjectCard({ project }: { project: (typeof projects)[number] }) {
           ))}
         </div>
       </div>
-    </article>
+        </a>
   );
 }
 
@@ -172,17 +178,13 @@ export default function VMProjectsShowcase() {
   };
 
   return (
-    <section className="bg-[var(--vm-cream)] px-6 py-20 md:py-24">
-      <div className="mx-auto max-w-[1180px]">
-        <div className="text-center">
-          <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.32em] text-[var(--vm-muted)]">
-            Büyük altyapı, estetik dokunuş ve mühendislik
-          </p>
-
-          <h2 className="mx-auto max-w-[620px] text-[34px] font-bold leading-[1.05] tracking-[-0.03em] text-[var(--vm-navy)] md:text-[48px]">
-            Mühendislikte Yüksek Standartlar
-          </h2>
-        </div>
+  <section className="bg-white px-6 py-20 md:py-24">
+    <div className="mx-auto max-w-[1180px]">
+      <div className="text-center">
+        <h2 className="mx-auto max-w-[620px] text-[34px] font-bold leading-[1.05] tracking-[-0.03em] text-[var(--vm-navy)] md:text-[48px]">
+          Mühendislikte Yüksek Standartlar
+        </h2>
+      </div>
 
         {/* Mobil proje slider */}
         <div className="mt-12 overflow-hidden md:hidden">
@@ -239,11 +241,11 @@ export default function VMProjectsShowcase() {
 
         <div className="mt-14 flex justify-center">
           <a
-            href="#projelerimiz"
-            className="flex h-12 items-center justify-center bg-[var(--vm-red)] px-10 text-[11px] font-bold uppercase tracking-[0.16em] text-white transition hover:opacity-85"
-          >
-            Projelerimiz
-          </a>
+  href="/referanslarimiz"
+  className="flex h-12 items-center justify-center bg-[var(--vm-red)] px-10 text-[11px] font-bold uppercase tracking-[0.16em] text-white transition hover:opacity-85"
+>
+  Tüm Projeler
+</a>
         </div>
       </div>
     </section>

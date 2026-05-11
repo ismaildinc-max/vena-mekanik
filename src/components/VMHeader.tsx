@@ -29,7 +29,7 @@ export default function VMHeader() {
   };
 
   return (
-    <header className="relative z-50 w-full bg-[var(--vm-cream)]">
+    <header className="relative z-50 w-full border-b border-[#eef1f6] bg-white">
       <div className="mx-auto flex h-[72px] max-w-[1180px] items-center justify-between px-6">
         <Link
           href="/"
@@ -74,10 +74,10 @@ export default function VMHeader() {
         {/* Masaüstü sağ alan */}
         <div className="hidden items-center gap-5 lg:flex">
           <a
-            href="tel:+905062007401"
+            href="tel:+905532017491"
             className="text-[11px] font-semibold tracking-[0.02em] text-[var(--vm-navy)] transition hover:text-[var(--vm-red)]"
           >
-            📞 +90 506 200 74 01
+            📞 +90 553 201 74 91
           </a>
         </div>
 
@@ -85,7 +85,7 @@ export default function VMHeader() {
         <button
           type="button"
           onClick={() => setIsMenuOpen((current) => !current)}
-          className="relative flex h-10 w-10 items-center justify-center border border-[var(--vm-border)] text-[var(--vm-navy)] transition hover:border-[var(--vm-red)] lg:hidden"
+          className="relative flex h-10 w-10 items-center justify-center border border-[#eef1f6] bg-white text-[var(--vm-navy)] transition hover:border-[var(--vm-red)] lg:hidden"
           aria-label={isMenuOpen ? "Menüyü kapat" : "Menüyü aç"}
           aria-expanded={isMenuOpen}
         >
@@ -96,7 +96,7 @@ export default function VMHeader() {
               }`}
             />
             <span
-              className={`absolute left-0 top-[7px] h-[2px] w-5 bg-current transition duration-300 ${
+              className={`absolute left-0 top-full z-40 w-full overflow-hidden bg-white px-6 shadow-[0_24px_60px_rgba(0,23,65,0.14)] transition-all duration-500 ease-out lg:hidden ${
                 isMenuOpen ? "opacity-0" : "opacity-100"
               }`}
             />
@@ -111,7 +111,7 @@ export default function VMHeader() {
 
       {/* Mobil açılır menü */}
       <div
-        className={`absolute left-0 top-full z-40 w-full overflow-hidden bg-[var(--vm-cream)] px-6 shadow-[0_24px_60px_rgba(0,23,65,0.14)] transition-all duration-500 ease-out lg:hidden ${
+        className={`absolute left-0 top-full z-40 w-full overflow-hidden bg-white px-6 shadow-[0_24px_60px_rgba(0,23,65,0.14)] transition-all duration-500 ease-out lg:hidden ${
           isMenuOpen
             ? "max-h-[520px] border-t border-[var(--vm-border)] opacity-100"
             : "max-h-0 border-t-0 opacity-0"

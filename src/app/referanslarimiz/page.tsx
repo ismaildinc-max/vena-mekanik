@@ -86,21 +86,15 @@ const projects = [
 
 export default function ReferanslarimizPage() {
   return (
-    <main className="bg-[#f7f0df] text-[#061f49]">
+    <main className="bg-white text-[#061f49]">
       <section className="px-5 pb-16 pt-28 md:px-8 md:pb-24 md:pt-36">
         <div className="mx-auto max-w-[1180px] 2xl:max-w-[1400px]">
           <div className="mx-auto max-w-[780px] text-center">
             
 
             <h1 className="text-[42px] font-bold leading-[1.08] tracking-[-1.8px] text-[#061f49] md:text-[64px] 2xl:text-[76px]">
-              Referanslarımız ve proje öne çıkanları
-            </h1>
-
-            <p className="mx-auto mt-7 max-w-[680px] text-[16px] leading-7 text-[#647086] md:text-[18px]">
-              Vena Mekanik olarak farklı ölçeklerdeki yapılarda; ısıtma,
-              soğutma, havalandırma ve mekanik tesisat alanlarında güvenilir,
-              verimli ve uzun ömürlü çözümler sunuyoruz.
-            </p>
+  Projelerimiz
+</h1>
           </div>
 
           <div className="mt-20 grid gap-x-5 gap-y-12 md:grid-cols-2 lg:grid-cols-3 2xl:gap-x-6 2xl:gap-y-14">
@@ -120,7 +114,7 @@ export default function ReferanslarimizPage() {
                   />
                 </Link>
 
-                <div className="rounded-b-[6px] border border-[#d7d1c4] bg-[#ece7dc] px-7 py-7 shadow-[0_14px_30px_rgba(6,31,73,0.06)]">
+                <div className="rounded-b-[6px] border border-[#eef1f6] bg-white px-7 py-7 shadow-[0_14px_30px_rgba(6,31,73,0.06)]">
                   <Link href={`/referanslarimiz/${item.slug}`} className="block">
                     <h2 className="text-[26px] font-bold leading-tight tracking-[-0.7px] text-[#061f49] transition duration-300 group-hover:text-[#ef1d18]">
                       {item.title}
@@ -131,8 +125,8 @@ export default function ReferanslarimizPage() {
                     {item.location}
                   </p>
 
-                  <div className="mt-8 border-t border-[#d0c9bb]">
-                    <div className="flex items-start justify-between gap-4 border-b border-[#d0c9bb] py-4">
+                  <div className="mt-8 border-t border-[#eef1f6]">
+                    <div className="flex items-start justify-between gap-4 border-b border-[#eef1f6] py-4">
                       <span className="min-w-[120px] text-[13px] font-semibold uppercase tracking-[1.6px] text-[#7a808c]">
                         Hizmet Kapsamı
                       </span>
@@ -141,7 +135,7 @@ export default function ReferanslarimizPage() {
                       </span>
                     </div>
 
-                    <div className="flex items-start justify-between gap-4 border-b border-[#d0c9bb] py-4">
+                    <div className="flex items-start justify-between gap-4 border-b border-[#eef1f6] py-4">
                       <span className="text-[13px] font-semibold uppercase tracking-[1.6px] text-[#7a808c]">
                         Proje Alanı
                       </span>
@@ -150,7 +144,7 @@ export default function ReferanslarimizPage() {
                       </span>
                     </div>
 
-                    <div className="flex items-start justify-between gap-4 border-b border-[#d0c9bb] py-4">
+                    <div className="flex items-start justify-between gap-4 border-b border-[#eef1f6] py-4">
                       <span className="text-[13px] font-semibold uppercase tracking-[1.6px] text-[#7a808c]">
                         Mevcut Durum
                       </span>
@@ -164,7 +158,7 @@ export default function ReferanslarimizPage() {
                     href={`/referanslarimiz/${item.slug}`}
                     className="mt-7 inline-flex items-center justify-center rounded-full border border-[#061f49] px-6 py-3 text-[14px] font-semibold tracking-[0.2px] text-[#061f49] transition duration-300 hover:border-[#ef1d18] hover:bg-[#ef1d18] hover:text-white"
                   >
-                    Bu Referans Hakkında Detaylar
+                    Proje Detayları
                   </Link>
                 </div>
               </article>
