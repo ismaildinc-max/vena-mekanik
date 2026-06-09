@@ -25,7 +25,7 @@ const projects = [
   },
   {
     title: "Test Alanı Sprinkler Değişimi",
-    location: "Beşiktaş / İstanbul",
+    location: "Dilovası / Kocaeli",
     image: "/images/projects/efectis-era.jpeg",
     href: "/referanslarimiz/test-alani-sprinkler-degisimi",
     details: [
@@ -45,7 +45,7 @@ const projects = [
   },
   {
     title: "Torium Ortak Alan Revizyonları",
-    location: "Beşiktaş / İstanbul",
+    location: "Esenyurt / İstanbul",
     image: "/images/projects/torium_avm.jpeg",
     href: "/referanslarimiz/torium-ortak-alan-revizyonlari",
     details: [

@@ -52,11 +52,11 @@ export default function VMIntroServices() {
     >
       <div className="mx-auto max-w-[1180px]">
         <h1 className="w-full max-w-[1120px] text-[28px] font-bold leading-[1.08] tracking-[-0.035em] text-[var(--vm-navy)] md:text-[40px] lg:text-[44px] xl:text-[46px]">
-          Projelerinizi yüksek{" "}
-          <span className="text-[var(--vm-red)]">
-            mühendislik standartlarıyla
-          </span>{" "}
-          buluşturarak, anahtar teslim mekanik taahhüt hizmetleri sağlamaktayız.
+          Projelerinizi{" "}
+<span className="text-[var(--vm-red)]">
+  yüksek mühendislik standartlarıyla
+</span>{" "}
+buluşturarak, anahtar teslim mekanik taahhüt hizmetleri sağlamaktayız.
         </h1>
 
         {/* Mobil düzen: başlık / görsel / butonlar */}

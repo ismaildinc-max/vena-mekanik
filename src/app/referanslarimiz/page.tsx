@@ -2,32 +2,32 @@ import Link from "next/link";
 
 const projects = [
   {
-    slug: "dikilitas-cami-projesi",
-    title: "Dikilitaş Cami Projesi",
-    image: "/images/projects/dikiltas-cami-1.jpg",
-    location: "Beşiktaş / İstanbul",
-    service: "VRF, Mekanik Tesisat, Yangın",
-    area: "12.500 m2",
-    status: "Tamamlandı",
-  },
-  {
-    slug: "test-alani-sprinkler-degisimi",
-    title: "Test Alanı Sprinkler Değişimi",
-    image: "/images/projects/efectis-era.jpeg",
-    location: "Beşiktaş / İstanbul",
-    service: "VRF, Mekanik Tesisat, Yangın",
-    area: "12.500 m2",
-    status: "Tamamlandı",
-  },
-  {
-    slug: "torium-ortak-alan-revizyonlari",
-    title: "Torium Ortak Alan Revizyonları",
-    image: "/images/projects/torium_avm.jpeg",
-    location: "Beylikdüzü / İstanbul",
-    service: "VRF, Mekanik Tesisat, Yangın",
-    area: "12.500 m2",
-    status: "Tamamlandı",
-  },
+  slug: "dikilitas-cami-projesi",
+  title: "Dikilitaş Cami Projesi",
+  image: "/images/projects/dikiltas-cami-1.jpg",
+  location: "Beşiktaş / İstanbul",
+  employer: "Sinpaş GYO - Pirinçoğlu İnşaat",
+  area: "793 m²",
+  status: "Devam Ediyor",
+},
+{
+  slug: "test-alani-sprinkler-degisimi",
+  title: "Test Alanı Sprinkler Değişimi",
+  image: "/images/projects/efectis-era.jpeg",
+  location: "Dilovası / Kocaeli",
+  employer: "Efectis Era Avrasya",
+  area: "900 m²",
+  status: "Tamamlandı",
+},
+{
+  slug: "torium-ortak-alan-revizyonlari",
+  title: "Torium Ortak Alan Revizyonları",
+  image: "/images/projects/torium_avm.jpeg",
+  location: "Esenyurt / İstanbul",
+  employer: "Torunlar GYO",
+  area: "350 m²",
+  status: "Tamamlandı",
+},
   {
     slug: "referans-villa-proje",
     title: "Referans Villa Proje",
@@ -128,10 +128,10 @@ export default function ReferanslarimizPage() {
                   <div className="mt-8 border-t border-[#eef1f6]">
                     <div className="flex items-start justify-between gap-4 border-b border-[#eef1f6] py-4">
                       <span className="min-w-[120px] text-[13px] font-semibold uppercase tracking-[1.6px] text-[#7a808c]">
-                        Hizmet Kapsamı
+                        İşveren
                       </span>
                       <span className="text-right text-[13px] font-semibold uppercase leading-6 tracking-[0.5px] text-[#061f49]">
-                        {item.service}
+                        {item.employer}
                       </span>
                     </div>
 

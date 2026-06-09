@@ -1,3 +1,4 @@
+import VMFloatingActions from "@/components/VMFloatingActions";
 import type { Metadata } from "next";
 import VMHeader from "@/components/VMHeader";
 import VMFooter from "@/components/VMFooter";
@@ -21,6 +22,7 @@ export default function RootLayout({
           <VMHeader />
           {children}
           <VMFooter />
+          <VMFloatingActions />
         </div>
       </body>
     </html>

@@ -3,105 +3,105 @@ import { notFound } from "next/navigation";
 import ProjectHoverGallery from "@/components/ProjectHoverGallery";
 
 const projects = [
-  {
-    slug: "dikilitas-cami-projesi",
-    title: "Dikilitaş Cami Projesi",
-    image: "/images/projects/dikiltas-cami-1.jpg",
-    location: "Beşiktaş / İstanbul",
-    service: "VRF, Mekanik Tesisat, Yangın",
-    area: "12.500 m2",
-    status: "Tamamlandı",
-    category: "Mekanik Tesisat",
-    eyebrow: "Proje Detayı",
-    detailTitle: "Dikilitaş Cami Projesi mekanik tesisat uygulamaları",
-    intro:
-      "Dikilitaş Cami Projesi kapsamında yapının teknik ihtiyaçlarına uygun, güvenilir ve uzun ömürlü mekanik tesisat çözümleri uygulanmıştır.",
-    content:
-      "Proje sürecinde VRF sistemleri, yangın tesisatı ve genel mekanik altyapı çalışmaları bütüncül bir planlama ile ele alınmıştır. Uygulama aşamasında sistem verimliliği, kullanım güvenliği ve sürdürülebilir performans ön planda tutulmuştur.",
-    gallery: [
-      {
-        image: "/images/projects/dikiltas-cami-1.jpg",
-        title: "Genel Proje Görünümü",
-        category: "Fotoğraf 01",
-      },
-      {
-        image: "/images/projects/dikiltas-cami-1.jpg",
-        title: "Uygulama Detayı",
-        category: "Fotoğraf 02",
-      },
-      {
-        image: "/images/projects/dikiltas-cami-1.jpg",
-        title: "Mekanik Sistem Bölümü",
-        category: "Fotoğraf 03",
-      },
-    ],
-  },
-  {
-    slug: "test-alani-sprinkler-degisimi",
-    title: "Test Alanı Sprinkler Değişimi",
-    image: "/images/projects/efectis-era.jpeg",
-    location: "Beşiktaş / İstanbul",
-    service: "VRF, Mekanik Tesisat, Yangın",
-    area: "12.500 m2",
-    status: "Tamamlandı",
-    category: "Yangın Tesisatı",
-    eyebrow: "Proje Detayı",
-    detailTitle: "Test alanı sprinkler değişimi ve sistem revizyonu",
-    intro:
-      "Test Alanı Sprinkler Değişimi projesinde mevcut yangın tesisatı altyapısı yenilenerek daha güvenli ve sürdürülebilir bir sistem yapısı oluşturulmuştur.",
-    content:
-      "Çalışma kapsamında sprinkler hattı, bağlantı detayları ve sistem bileşenleri proje ihtiyaçlarına göre revize edilmiştir. Uygulama süreci, tesis güvenliğini artıracak ve sistem performansını koruyacak şekilde tamamlanmıştır.",
-    gallery: [
-      {
-        image: "/images/projects/efectis-era.jpeg",
-        title: "Alan Genel Görünümü",
-        category: "Fotoğraf 01",
-      },
-      {
-        image: "/images/projects/efectis-era.jpeg",
-        title: "Sprinkler Hattı Revizyonu",
-        category: "Fotoğraf 02",
-      },
-      {
-        image: "/images/projects/efectis-era.jpeg",
-        title: "Sistem Detayı",
-        category: "Fotoğraf 03",
-      },
-    ],
-  },
-  {
-    slug: "torium-ortak-alan-revizyonlari",
-    title: "Torium Ortak Alan Revizyonları",
-    image: "/images/projects/torium_avm.jpeg",
-    location: "Beylikdüzü / İstanbul",
-    service: "VRF, Mekanik Tesisat, Yangın",
-    area: "12.500 m2",
-    status: "Tamamlandı",
-    category: "AVM Mekanik Revizyon",
-    eyebrow: "Proje Detayı",
-    detailTitle: "Torium ortak alan mekanik sistem revizyonları",
-    intro:
-      "Torium Ortak Alan Revizyonları kapsamında yoğun kullanıma sahip alanlarda mekanik altyapının performansı ve işletme verimliliği artırılmıştır.",
-    content:
-      "Proje boyunca ortak alanların mevcut mekanik sistemleri değerlendirilmiş, ihtiyaç duyulan noktalarda revizyon ve iyileştirme çalışmaları gerçekleştirilmiştir. Amaç, kullanıcı konforunu artırırken sistem sürekliliğini korumaktır.",
-    gallery: [
-      {
-        image: "/images/projects/torium_avm.jpeg",
-        title: "Ortak Alan Genel Görünümü",
-        category: "Fotoğraf 01",
-      },
-      {
-        image: "/images/projects/torium_avm.jpeg",
-        title: "Revizyon Uygulama Alanı",
-        category: "Fotoğraf 02",
-      },
-      {
-        image: "/images/projects/torium_avm.jpeg",
-        title: "Tamamlanan Bölüm",
-        category: "Fotoğraf 03",
-      },
-    ],
-  },
+{
+  slug: "dikilitas-cami-projesi",
+  title: "Dikilitaş Cami Projesi",
+  image: "/images/projects/dikiltas-cami-1.jpg",
+  location: "Beşiktaş / İstanbul",
+  employer: "Sinpaş GYO - Pirinçoğlu İnşaat",
+  area: "793 m²",
+  status: "Devam Ediyor",
+  category: "Mekanik Tesisat",
+  eyebrow: "Proje Detayı",
+  detailTitle: "Dikilitaş Cami Projesi mekanik tesisat uygulamaları",
+  intro:
+    "Dikilitaş Cami Projesi kapsamında yapının teknik ihtiyaçlarına uygun, güvenilir ve uzun ömürlü mekanik tesisat çözümleri uygulanmıştır.",
+  content:
+    "Projede sıhhi tesisat, yerden ısıtma tesisatı, VRF sistem drenajları, yağmur inişleri ve havalandırma sistemleri yer almaktadır. Uygulama aşamasında sistem verimliliği, kullanım güvenliği ve sürdürülebilir performans ön planda tutulmuştur.",
+  gallery: [
+    {
+      image: "/images/projects/dikiltas-cami-1.jpg",
+      title: "Genel Proje Görünümü",
+      category: "Fotoğraf 01",
+    },
+    {
+      image: "/images/projects/dikiltas-cami-1.jpg",
+      title: "Uygulama Detayı",
+      category: "Fotoğraf 02",
+    },
+    {
+      image: "/images/projects/dikiltas-cami-1.jpg",
+      title: "Mekanik Sistem Bölümü",
+      category: "Fotoğraf 03",
+    },
+  ],
+},
+{
+  slug: "test-alani-sprinkler-degisimi",
+  title: "Test Alanı Sprinkler Değişimi",
+  image: "/images/projects/efectis-era.jpeg",
+  location: "Dilovası / Kocaeli",
+  employer: "Efectis Era Avrasya",
+  area: "900 m²",
+  status: "Tamamlandı",
+  category: "Yangın Tesisatı",
+  eyebrow: "Proje Detayı",
+  detailTitle: "Test alanı sprinkler değişimi ve sistem revizyonu",
+  intro:
+    "Test Alanı Sprinkler Değişimi projesinde mevcut yangın tesisatı altyapısı yenilenerek daha güvenli ve sürdürülebilir bir sistem yapısı oluşturulmuştur.",
+  content:
+    "Çalışma kapsamında mevcut sprinkler kullanım alanına uygun özellikte yeni sprinklerle değiştirilmiştir. Uygulama süreci, çalışan tesisin çalışma saatlerini etkilemeyecek şekilde İSG kuralları esas alınarak 12 metre yüksekliğinde çalışma alanında tamamlanmıştır.",
+  gallery: [
+    {
+      image: "/images/projects/efectis-era.jpeg",
+      title: "Alan Genel Görünümü",
+      category: "Fotoğraf 01",
+    },
+    {
+      image: "/images/projects/efectis-era.jpeg",
+      title: "Sprinkler Hattı Revizyonu",
+      category: "Fotoğraf 02",
+    },
+    {
+      image: "/images/projects/efectis-era.jpeg",
+      title: "Sistem Detayı",
+      category: "Fotoğraf 03",
+    },
+  ],
+},
+{
+  slug: "torium-ortak-alan-revizyonlari",
+  title: "Torium Ortak Alan Revizyonları",
+  image: "/images/projects/torium_avm.jpeg",
+  location: "Esenyurt / İstanbul",
+  employer: "Torunlar GYO",
+  area: "350 m²",
+  status: "Tamamlandı",
+  category: "AVM Mekanik Revizyon",
+  eyebrow: "Proje Detayı",
+  detailTitle: "Torium ortak alan mekanik sistem revizyonları",
+  intro:
+    "Torium Ortak Alan Revizyonları kapsamında yoğun kullanıma sahip alanlarda mekanik altyapının performansı ve işletme verimliliği artırılmıştır.",
+  content:
+    "Proje boyunca ortak WC alanlarının tamamen demonte edilerek hatlarıyla birlikte yeniden imal edilmektedir. Kullanım ömrü ve işletme sürecinde konforun artırılması hedeflenmiştir.",
+  gallery: [
+    {
+      image: "/images/projects/torium_avm.jpeg",
+      title: "Ortak Alan Genel Görünümü",
+      category: "Fotoğraf 01",
+    },
+    {
+      image: "/images/projects/torium_avm.jpeg",
+      title: "Revizyon Uygulama Alanı",
+      category: "Fotoğraf 02",
+    },
+    {
+      image: "/images/projects/torium_avm.jpeg",
+      title: "Tamamlanan Bölüm",
+      category: "Fotoğraf 03",
+    },
+  ],
+},
   {
   slug: "referans-villa-proje",
   title: "Referans Villa Proje",
@@ -383,9 +383,9 @@ const moreProjects = [
 </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <span className="rounded-full border border-[#eef1f6] px-4 py-2 text-[13px] font-semibold uppercase tracking-[1px] text-[#061f49]">
-                  {project.service}
-                </span>
+                <span className="rounded-full border border-[#eef1f6] bg-white px-4 py-2 text-[13px] font-semibold uppercase tracking-[1px] text-[#061f49]">
+{project.employer ?? project.service}
+</span>
 
                 <span className="rounded-full border border-[#eef1f6] px-4 py-2 text-[13px] font-semibold uppercase tracking-[1px] text-[#061f49]">
                   {project.area}
