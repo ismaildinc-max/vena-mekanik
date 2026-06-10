@@ -19,7 +19,7 @@ const projects = [
       },
       {
         label: "Mevcut Durum",
-        value: "Tamamlandı",
+        value: "Devam Ediyor",
       },
     ],
   },
@@ -59,7 +59,7 @@ const projects = [
       },
       {
         label: "Mevcut Durum",
-        value: "Tamamlandı",
+        value: "Devam Ediyor",
       },
     ],
   },

@@ -53,18 +53,18 @@ const projects = [
     "Çalışma kapsamında mevcut sprinkler kullanım alanına uygun özellikte yeni sprinklerle değiştirilmiştir. Uygulama süreci, çalışan tesisin çalışma saatlerini etkilemeyecek şekilde İSG kuralları esas alınarak 12 metre yüksekliğinde çalışma alanında tamamlanmıştır.",
   gallery: [
     {
-      image: "/images/projects/efectis-era.jpeg",
+      image: "/images/projects/efectis-era-2.jpeg",
       title: "Alan Genel Görünümü",
       category: "Fotoğraf 01",
     },
     {
-      image: "/images/projects/efectis-era.jpeg",
-      title: "Sprinkler Hattı Revizyonu",
+      image: "/images/projects/efectis-era-3.jpeg",
+      title: "Dış Genel Görünümü",
       category: "Fotoğraf 02",
     },
     {
-      image: "/images/projects/efectis-era.jpeg",
-      title: "Sistem Detayı",
+      image: "/images/projects/efectis-era-4.jpg",
+      title: "Dış Detay Görünüm",
       category: "Fotoğraf 03",
     },
   ],
@@ -76,7 +76,7 @@ const projects = [
   location: "Esenyurt / İstanbul",
   employer: "Torunlar GYO",
   area: "350 m²",
-  status: "Tamamlandı",
+  status: "Devam Ediyor",
   category: "AVM Mekanik Revizyon",
   eyebrow: "Proje Detayı",
   detailTitle: "Torium ortak alan mekanik sistem revizyonları",
@@ -86,18 +86,18 @@ const projects = [
     "Proje boyunca ortak WC alanlarının tamamen demonte edilerek hatlarıyla birlikte yeniden imal edilmektedir. Kullanım ömrü ve işletme sürecinde konforun artırılması hedeflenmiştir.",
   gallery: [
     {
-      image: "/images/projects/torium_avm.jpeg",
-      title: "Ortak Alan Genel Görünümü",
+      image: "/images/projects/torium-avm-2.jpg",
+      title: "Genel Görünümü",
       category: "Fotoğraf 01",
     },
     {
-      image: "/images/projects/torium_avm.jpeg",
-      title: "Revizyon Uygulama Alanı",
+      image: "/images/projects/torium-avm-4.jpg",
+      title: "Ortak Alan Genel Görünümü",
       category: "Fotoğraf 02",
     },
     {
-      image: "/images/projects/torium_avm.jpeg",
-      title: "Tamamlanan Bölüm",
+      image: "/images/projects/torium-avm-3.jpg",
+      title: "Genel Görünümü",
       category: "Fotoğraf 03",
     },
   ],

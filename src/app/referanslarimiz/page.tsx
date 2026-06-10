@@ -39,7 +39,7 @@ export default function ReferanslarimizPage() {
             
 
             <h1 className="text-[42px] font-bold leading-[1.08] tracking-[-1.8px] text-[#061f49] md:text-[64px] 2xl:text-[76px]">
-  Projelerimiz
+  Referanslarımız
 </h1>
           </div>
 
