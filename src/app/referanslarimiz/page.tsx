@@ -26,7 +26,7 @@ const projects = [
   location: "Esenyurt / İstanbul",
   employer: "Torunlar GYO",
   area: "350 m²",
-  status: "Tamamlandı",
+  status: "Devam Ediyor",
 },
 ];
 
