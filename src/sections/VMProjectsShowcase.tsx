@@ -15,7 +15,7 @@ const projects = [
       },
       {
         label: "Proje Alanı",
-        value: "12.500 M2",
+        value: "793 M2",
       },
       {
         label: "Mevcut Durum",
@@ -35,7 +35,7 @@ const projects = [
       },
       {
         label: "Proje Alanı",
-        value: "12.500 M2",
+        value: "900 M2",
       },
       {
         label: "Mevcut Durum",
@@ -55,7 +55,7 @@ const projects = [
       },
       {
         label: "Proje Alanı",
-        value: "12.500 M2",
+        value: "350 M2",
       },
       {
         label: "Mevcut Durum",

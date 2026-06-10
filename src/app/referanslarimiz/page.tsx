@@ -28,60 +28,6 @@ const projects = [
   area: "350 m²",
   status: "Tamamlandı",
 },
-  {
-    slug: "referans-villa-proje",
-    title: "Referans Villa Proje",
-    image: "/images/projects/villa.jpeg",
-    location: "Büyükçekmece / İstanbul",
-    service: "Isıtma, Soğutma, Havalandırma",
-    area: "3.200 m2",
-    status: "Tamamlandı",
-  },
-  {
-    slug: "referans-otel-proje",
-    title: "Referans Otel Proje",
-    image: "/images/projects/hotel.jpeg",
-    location: "Şişli / İstanbul",
-    service: "Mekanik Tesisat, Yangın, Havalandırma",
-    area: "8.750 m2",
-    status: "Tamamlandı",
-  },
-  {
-    slug: "referans-residance-proje",
-    title: "Referans Residance Proje",
-    image: "/images/projects/residance.jpeg",
-    location: "Ataşehir / İstanbul",
-    service: "VRF, Isıtma, Soğutma",
-    area: "10.400 m2",
-    status: "Tamamlandı",
-  },
-  {
-    slug: "referans-hastane-proje",
-    title: "Referans Hastane Proje",
-    image: "/images/projects/hospital.jpeg",
-    location: "Pendik / İstanbul",
-    service: "Havalandırma, Yangın, Mekanik Tesisat",
-    area: "15.600 m2",
-    status: "Tamamlandı",
-  },
-  {
-    slug: "referans-magaza-proje",
-    title: "Referans Mağaza Proje",
-    image: "/images/projects/store.jpeg",
-    location: "Bakırköy / İstanbul",
-    service: "Klima, Havalandırma, Mekanik Tesisat",
-    area: "2.150 m2",
-    status: "Tamamlandı",
-  },
-  {
-    slug: "referans-ofis-proje",
-    title: "Referans Ofis Proje",
-    image: "/images/projects/office.jpeg",
-    location: "Maslak / İstanbul",
-    service: "VRF, Mekanik Tesisat, Havalandırma",
-    area: "4.850 m2",
-    status: "Tamamlandı",
-  },
 ];
 
 export default function ReferanslarimizPage() {
@@ -167,15 +113,7 @@ export default function ReferanslarimizPage() {
         </div>
       </section>
 
-      <section className="overflow-hidden px-5 pt-8 md:px-8 md:pt-12">
-        <div className="mx-auto max-w-[1180px] 2xl:max-w-[1400px]">
-          <img
-            src="/images/logos/vena-logo.svg"
-            alt="Vena Mekanik"
-            className="w-full opacity-100"
-          />
-        </div>
-      </section>
+
     </main>
   );
 }
